@@ -13,8 +13,12 @@
         var number = prompt ('Сколько Вам лет?');
         
         const n = number % 10;
+        const n1 = number % 100
 
-        if (n == 1) {
+        
+        if(n1 >= 11 && n1 <= 19) {
+            alert(number + ' лет');
+        }else if (n == 1) {
             alert(number + ' год');
         } else if (n >= 2 && n <= 4) {
             alert(number + ' года');
